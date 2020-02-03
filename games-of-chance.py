@@ -23,13 +23,11 @@ def coin_flip(guess, bet):
     print("")
 
     #call the bet function to obtain the bet
-    bet = bet()
+    bet = get_bet()
 
     #Intake the bet and the guess and make sure balance < bet
     if bet <= 0:
-        print("")
-        print("Your bet must be a positive number")
-        print("")
+        error()
         return 0
     else:
         guess = str(input("Choose Heads or Tails:                  "))
@@ -67,10 +65,10 @@ def cho_han(guess,bet):
     print("")
 
     #call the bet function to obtain the bet
-    bet = bet()
+    bet = get_bet()
 
     if bet <= 0:
-        print("Your bet must be a positive number")
+        error()
         return 0
     else:
         #Six sides to a die, so generate random number 1-6
@@ -104,22 +102,22 @@ def two_card_draw(guess, bet):
     print("-------------------------------------")
     print("")
 
-    print("Rules: Two cards are chosen, the higer one wins ")
+    print("Rules: Two cards are chosen, the higher one wins ")
     print("")
 
-    bet = bet()
+    bet = get_bet()
 
     your_card = random.randint(1,52)
     my_card = random.randint(1,52)
 
     if bet <= 0:
-        print("Your bet must be a positive number")
+        error()
         return 0
     else:
         print("")
-        print("Your card is:                     " + str(your_card))
+        print("Your card is:                           " + str(your_card))
         time.sleep(2)
-        print("My card is:                       " + str(my_card))
+        print("House card is:                          " + str(my_card))
         time.sleep(2)
         print("")
 
@@ -136,9 +134,49 @@ def two_card_draw(guess, bet):
         else:
             print("Something went wrong!")
             return
-def bet():
+
+#Game: Roulette Wheel. Instant lose if the ball lands on 0 or 00.
+def roulette(guess, bet):
+    print("Current Balance:                        $" + str(balance))
+    print("_____________________________________")
+    print("..........Game 4: Roulette...........")
+    print("-------------------------------------")
+    print("")
+
+    print("""Rules: You guess a number between 0 and 36. If the ball
+    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is 00""")
+    print("")
+
+    #Standard wheel has 36 slots, plus 00
+    landed_ball = random.randint(1, 37)
+
+    bet = get_bet()
+
+    if bet <= 0:
+        error()
+        return 0
+    else:
+        guess = int(input("Choose a number:                        "))
+        if guess > 36:
+            print("Choose a number less than 36")
+            return 0
+        else:
+            print("")
+            print("The roulette wheel is spinning.....")
+            time.sleep(5)
+            if landed_ball == 37:
+                print("The ball landed on:                     00")
+            else:
+                print("")
+                print("The ball landed on:                     " + str(landed_ball))
+                return 0
+
+def get_bet():
     bet = int(input("How much are you betting?               $"))
     return bet
+
+def error():
+    print("*** Error: Your bet must be a positive number and less than your balance")
 
 def winner():
     print("")
@@ -156,5 +194,7 @@ def loser():
 balance += coin_flip(guess,bet)
 balance += cho_han(guess,bet)
 balance += two_card_draw(guess,bet)
-print("The total game balance is:              $" + str(balance))
+balance += roulette(guess,bet)
+print("")
+print("Your total winning/losses are:          $" + str(balance))
 print("")
