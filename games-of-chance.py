@@ -1,3 +1,8 @@
+# Author: Ken LaCroix
+# Version: 1
+# CodeAcademy "Games of Chance" Project
+# https://www.kennethlacroix.me
+
 import random, time
 
 #Declare guess and bet now so we can use 'if' logic later on them
@@ -6,6 +11,11 @@ bet = int()
 
 print("_____________________________________")
 print("..........Games of Chance............")
+print("*Coin Flip")
+print("*Cho-Han")
+print("*Two Card Draw")
+print("*Roulette")
+print(".....................................")
 print("-------------------------------------")
 print("")
 
@@ -32,6 +42,7 @@ def coin_flip(guess, bet):
 
     #Intake the bet and the guess and make sure bet < balance
     if bet <= 0:
+        error()
         return 0
     else:
         if bet > balance:
@@ -41,23 +52,38 @@ def coin_flip(guess, bet):
             time.sleep(2)
             return 0
         else:
-            guess = str(input("Choose Heads or Tails:                  "))
+            while True:
+                try:
+                    guess = str(input("Choose Heads or Tails: "))
+                except ValueError:
+                    error()
+                    continue
+                else:
+                    if guess == "Heads" or guess == "heads" or guess == "HEADS"\
+                    or guess == "Tails" or guess == "tails" or guess == "TAILS":
+                        print("")
+                        print("The Coin is flipping.....")
+                        print("")
+                        time.sleep(2)
 
-            print("")
-            print("The Coin is flipping.....")
-            print("")
-            time.sleep(2)
+                        #Generate either a '1' or a '2'
+                        flip = random.randint(1, 2)
 
-            #Generate either a '1' or a '2'
-            flip = random.randint(1, 2)
+                        #Compare the flip results against the guess, retrun
+                        #the bet (+ or -)
+                        if (flip == 1 and guess == "Heads" or guess == "heads" \
+                        or guess == "HEADS") or (flip == 2 and guess == "Tails"\
+                        or guess == "tails" or guess == "TAILS"):
+                            winner()
+                            return bet
+                        else:
+                            loser()
+                            return -bet
+                    else:
+                        error()
+                        return 0
+                break
 
-            #Compare the flip results against the guess, retrun the bet (+ or -)
-            if (flip == 1 and guess == "Heads") or (flip == 2 and guess == "Tails"):
-                winner()
-                return bet
-            else:
-                loser()
-                return -bet
 
 #Game: Cho-Han. Sum two dice rolls. User Chooses Odd or Even.
 def cho_han(guess,bet):
@@ -66,7 +92,8 @@ def cho_han(guess,bet):
     print("-------------------------------------")
     print("")
 
-    print("Rules: You choose Odd or Even then two dice are rolled and the value is summed. ")
+    print("Rules: You choose Odd or Even then two dice are rolled and the \
+    value is summed. ")
     print("")
 
     print("Current Balance:                        $" + str(balance))
@@ -75,6 +102,7 @@ def cho_han(guess,bet):
 
 
     if bet <= 0:
+        error()
         return 0
     else:
         if bet > balance:
@@ -159,9 +187,9 @@ def roulette(guess, bet):
     print("-------------------------------------")
     print("")
 
-    print("""Rules: You guess a number between 0 and 36. If the ball
-    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is equal
-    to 00. If you guess correctly, there is a multiplier of 35""")
+    print("Rules: You guess a number between 0 and 36. If the ball \
+    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is equal \
+    to 00. If you guess correctly, there is a multiplier of 35")
     print("")
 
     #Standard wheel has 36 slots, plus 00, which in this case is 37.
@@ -182,7 +210,8 @@ def roulette(guess, bet):
         else:
             guess = int(input("Choose a number:                        "))
             if guess == 0 or guess == 37:
-                error()
+                #Since the user landed on 0 or 00, they insta-lose
+                loser()
                 return 0
             else:
                 if guess > 37:
@@ -199,7 +228,8 @@ def roulette(guess, bet):
                         return -bet
                     else:
                         print("")
-                        print("The ball landed on:                     " + str(landed_ball))
+                        print("The ball landed on:                     " \
+                        + str(landed_ball))
                         if guess == landed_ball:
                             bet = (bet * 35)
                             winner()
@@ -219,6 +249,7 @@ def error():
     print("")
     print("*** Error: Please check your input and try again!")
     print("")
+    time.sleep(2)
 
 def winner():
     print("")
@@ -232,7 +263,6 @@ def loser():
     print("")
     time.sleep(2)
 
-#Call your game of chance functions here
 #This 'if' structure will exit if the user runs out of money. If the balance
 #stays positive, it will complete fully.
 if balance > 0:
