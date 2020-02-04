@@ -3,10 +3,16 @@ import random, time
 #Declare guess and bet now so we can use 'if' logic later on them
 guess = str()
 bet = int()
+
+print("_____________________________________")
+print("..........Games of Chance............")
+print("-------------------------------------")
 print("")
 
 #Declare balance globally so we use it as a running total
-balance = int(input("How much are you bringing to the table? $"))
+balance = int(input("How much are you starting with?        $"))
+#Declare again so we can determine profit/loss
+init_balance = int(balance)
 
 #Write your game of chance functions here
 
@@ -249,5 +255,6 @@ if balance > 0:
             balance += two_card_draw(guess,bet)
             if balance > 0:
                 balance += roulette(guess,bet)
-print("Your total winning/losses are:          $" + str(balance))
+print("Your total winning are:                 $" + str(balance - init_balance))
+print("Your current balance is:                $" + str(balance))
 print("")
