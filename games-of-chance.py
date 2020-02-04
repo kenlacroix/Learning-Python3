@@ -10,12 +10,11 @@ print("-------------------------------------")
 print("")
 
 #Declare balance globally so we use it as a running total
-balance = int(input("How much are you starting with?        $"))
+balance = int(input("How much are you starting with?         $"))
 #Declare again so we can determine profit/loss
 init_balance = int(balance)
 
 #Write your game of chance functions here
-
 #Game: Coin Flip. User calls Heads or Tails
 def coin_flip(guess, bet):
     #Display game banner
@@ -96,8 +95,6 @@ def cho_han(guess,bet):
             time.sleep(2)
             print("Second die roll:                        " + str(die_roll_2))
             time.sleep(2)
-            print("The sum of the dice is:                 " + str(dice_roll))
-            time.sleep(2)
 
             if dice_roll % 2 == 0 and guess == "Even":
                 winner()
@@ -125,7 +122,7 @@ def two_card_draw(guess, bet):
     my_card = random.randint(1,52)
 
     if bet <= 0:
-        return 0
+        error()
     else:
         if bet > balance:
             print("")
@@ -134,32 +131,26 @@ def two_card_draw(guess, bet):
             time.sleep(2)
             return 0
         else:
-            if bet > balance:
-                print("")
-                print("You cannot bet more than your balance!!!")
-                print("")
+            print("")
+            print("Your card is:                           " + str(your_card))
+            time.sleep(2)
+            print("House card is:                          " + str(my_card))
+            time.sleep(2)
+            print("")
+
+            #Compare cards, higher one wins
+            if your_card > my_card:
+                winner()
+                return bet
+            elif my_card > your_card:
+                loser()
+                return -bet
+            elif my_card == your_card:
+                print("It was a tie!")
                 return 0
             else:
-                print("")
-                print("Your card is:                           " + str(your_card))
-                time.sleep(2)
-                print("House card is:                          " + str(my_card))
-                time.sleep(2)
-                print("")
-
-                #Compare cards, higher one wins
-                if your_card > my_card:
-                    winner()
-                    return bet
-                elif my_card > your_card:
-                    loser()
-                    return -bet
-                elif my_card == your_card:
-                    print("It was a tie!")
-                    return 0
-                else:
-                    error()
-                    return 0
+                error()
+                return 0
 
 #Game: Roulette Wheel. Instant lose if the ball lands on 0 or 00.
 def roulette(guess, bet):
@@ -169,7 +160,8 @@ def roulette(guess, bet):
     print("")
 
     print("""Rules: You guess a number between 0 and 36. If the ball
-    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is 00.""")
+    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is equal
+    to 00. If you guess correctly, there is a multiplier of 35""")
     print("")
 
     #Standard wheel has 36 slots, plus 00, which in this case is 37.
@@ -209,6 +201,7 @@ def roulette(guess, bet):
                         print("")
                         print("The ball landed on:                     " + str(landed_ball))
                         if guess == landed_ball:
+                            bet = (bet * 35)
                             winner()
                             return bet
                         else:
@@ -227,11 +220,6 @@ def error():
     print("*** Error: Please check your input and try again!")
     print("")
 
-def zerod_out():
-    print("")
-    print("*** You have exhausted all your funds!!!")
-    print("")
-
 def winner():
     print("")
     print("Result:                                 Winner!!!")
@@ -245,7 +233,7 @@ def loser():
     time.sleep(2)
 
 #Call your game of chance functions here
-#This 'if' struture will exit if the user runs out of money. If the balance
+#This 'if' structure will exit if the user runs out of money. If the balance
 #stays positive, it will complete fully.
 if balance > 0:
     balance += coin_flip(guess,bet)
@@ -255,6 +243,7 @@ if balance > 0:
             balance += two_card_draw(guess,bet)
             if balance > 0:
                 balance += roulette(guess,bet)
-print("Your total winning are:                 $" + str(balance - init_balance))
+
+print("You started out with:                   $" + str(init_balance))
 print("Your current balance is:                $" + str(balance))
 print("")
