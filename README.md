@@ -1,7 +1,7 @@
 ## Learning Python3
 ### Ken LaCroix (https://www.kennethlacroix.me)
 
-#### Games of chance (CodeCodeAcademy Project)
+#### Games of Chance (CodeAcademy Project)
 
 ##### Coin Toss: Heads or Tails.
 ##### Cho-Han: Two Dice are rolled, user guesses Odd or Even.
