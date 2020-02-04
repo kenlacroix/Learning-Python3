@@ -54,7 +54,7 @@ def coin_flip(guess, bet):
         else:
             while True:
                 try:
-                    guess = str(input("Choose Heads or Tails: "))
+                    guess = str(input("Choose Heads or Tails:                  "))
                 except ValueError:
                     error()
                     continue
