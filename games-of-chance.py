@@ -11,18 +11,49 @@ bet = int()
 
 print("_____________________________________")
 print("..........Games of Chance............")
-print("          *Coin Flip")
-print("          *Cho-Han")
+print("            *Coin Flip")
+print("             *Cho-Han")
 print("          *Two Card Draw")
-print("          *Roulette")
-print(".....................................")
+print("             *Roulette")
+print("")
+print("           By: Ken LaCroix")
+print("        https://www.kennethlacroix.me")
 print("-------------------------------------")
 print("")
 
-#Declare balance globally so we use it as a running total
-balance = int(input("How much are you starting with?         $"))
-#Declare again so we can determine profit/loss
-init_balance = int(balance)
+while True:
+    try:
+        balance = int(input("How much are you starting with?         $"))
+        #Declare again so we can determine profit/loss
+        init_balance = int(balance)
+    except ValueError:
+        print("Sorry, I didn't understand that.")
+        #better try again... Return to the start of the loop
+        continue
+    else:
+        if balance <= 10:
+            print("")
+            print("*** Achievement Unlocked: From small beginings....")
+            print("")
+            time.sleep(3)
+        if balance >= 100 and balance <= 400:
+            print("")
+            print("*** Achievement Unlocked: Big Spenda")
+            print("")
+            time.sleep(3)
+        if balance >= 500 and balance < 1000:
+            print("")
+            print("*** Achievement Unlocked: Your know the money is fake, right?")
+            print("")
+            time.sleep(3)
+        if balance >= 1000:
+            print("")
+            print("*** Achievement Unlocked: Make'n it RRRAAAIINNN!!!!!!")
+            print("")
+            time.sleep(3)
+        if balance <= 0:
+            error()
+        break
 
 #Write your game of chance functions here
 #Game: Coin Flip. User calls Heads or Tails
@@ -238,6 +269,7 @@ def roulette(guess, bet):
             return 0
         else:
             guess = int(input("Choose a number:                        "))
+            #Insta-fail because the ball landed on 0 or 00 (37)
             if guess == 0 or guess == 37:
                 #Since the user landed on 0 or 00, they insta-lose
                 loser()
@@ -261,7 +293,7 @@ def roulette(guess, bet):
                         + str(landed_ball))
                         if guess == landed_ball:
                             winner()
-                            #Adjust bet for multiplier
+                            #Adjust bet for multiplier, since the user won.
                             bet = (bet * 35)
                             print("*** Achievement Unlocked: Spinner Winner!!!")
                             print("")
@@ -271,6 +303,7 @@ def roulette(guess, bet):
                             loser()
                             return -bet
 
+#Check that the value is numeric, gets the input and returns the bet balance
 def get_bet():
     bet = input("How much are you betting?               $")
     if bet.isnumeric() == True:
@@ -296,6 +329,9 @@ def loser():
     print("")
     time.sleep(2)
 
+#This function will increment/decrement 'achievement'. It will have some other
+#logic that will unlock additional achievements like a winning streak of all
+#four games, etc. Right now, it does nothing :(
 def achievement(counter):
     print("")
 
@@ -313,3 +349,7 @@ if balance > 0:
 print("You started out with:                   $" + str(init_balance))
 print("Your current balance is:                $" + str(balance))
 print("")
+if init_balance == balance:
+    print("*** Achievement Unlocked: Atleast I broke even.")
+    print("")
+    time.sleep(3)
