@@ -1,8 +1,8 @@
 ## Learning Python3
-### Ken LaCroix
-### https://www.kennethlacroix.me
+### Ken LaCroix (https://www.kennethlacroix.me)
 
 #### Games of chance (CodeCodeAcademy Project)
+
 ##### Coin Toss: Heads or Tails.
 ##### Cho-Han: Two Dice are rolled, user guesses Odd or Even.
 ##### Two Card Draw: Highest card wins.
