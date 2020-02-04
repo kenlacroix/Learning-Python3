@@ -33,6 +33,7 @@ def coin_flip(guess, bet):
             print("")
             print("You cannot bet more than your balance!!!")
             print("")
+            time.sleep(2)
             return 0
         else:
             guess = str(input("Choose Heads or Tails:                  "))
@@ -75,6 +76,7 @@ def cho_han(guess,bet):
             print("")
             print("You cannot bet more than your balance!!!")
             print("")
+            time.sleep(2)
             return 0
         else:
             #Six sides to a die, so generate random number 1-6
@@ -123,6 +125,7 @@ def two_card_draw(guess, bet):
             print("")
             print("You cannot bet more than your balance!!!")
             print("")
+            time.sleep(2)
             return 0
         else:
             if bet > balance:
@@ -176,6 +179,7 @@ def roulette(guess, bet):
             print("")
             print("You cannot bet more than your balance!!!")
             print("")
+            time.sleep(2)
             return 0
         else:
             guess = int(input("Choose a number:                        "))
@@ -217,6 +221,11 @@ def error():
     print("*** Error: Please check your input and try again!")
     print("")
 
+def zerod_out():
+    print("")
+    print("*** You have exhausted all your funds!!!")
+    print("")
+
 def winner():
     print("")
     print("Result:                                 Winner!!!")
@@ -230,10 +239,15 @@ def loser():
     time.sleep(2)
 
 #Call your game of chance functions here
-balance += coin_flip(guess,bet)
-balance += cho_han(guess,bet)
-balance += two_card_draw(guess,bet)
-balance += roulette(guess,bet)
-print("")
+#This 'if' struture will exit if the user runs out of money. If the balance
+#stays positive, it will complete fully.
+if balance > 0:
+    balance += coin_flip(guess,bet)
+    if balance > 0:
+        balance += cho_han(guess,bet)
+        if balance > 0:
+            balance += two_card_draw(guess,bet)
+            if balance > 0:
+                balance += roulette(guess,bet)
 print("Your total winning/losses are:          $" + str(balance))
 print("")
