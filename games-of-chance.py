@@ -50,6 +50,9 @@ def coin_flip(guess, bet):
             print("You cannot bet more than your balance!!!")
             print("")
             time.sleep(2)
+            print("*** Achievement Unlocked: Doesn't play well with others.")
+            print("")
+            time.sleep(3)
             return 0
         else:
             while True:
@@ -62,8 +65,7 @@ def coin_flip(guess, bet):
                     if guess == "Heads" or guess == "heads" or guess == "HEADS"\
                     or guess == "Tails" or guess == "tails" or guess == "TAILS":
                         print("")
-                        print("The Coin is flipping.....")
-                        print("")
+                        print("The coin is in the air.....")
                         time.sleep(2)
 
                         #Generate either a '1' or a '2'
@@ -71,10 +73,14 @@ def coin_flip(guess, bet):
 
                         #Compare the flip results against the guess, retrun
                         #the bet (+ or -)
-                        if (flip == 1 and guess == "Heads" or guess == "heads" \
-                        or guess == "HEADS") or (flip == 2 and guess == "Tails"\
-                        or guess == "tails" or guess == "TAILS"):
+                        if (flip == 1 and guess == "Heads") or (flip == 1 and
+                        guess == "heads") or (flip == 1 and guess == "HEADS") \
+                        or (flip == 2 and guess == "Tails") or (flip == 2 and \
+                        guess == "tails") or (flip == 2 and guess == "TAILS"):
                             winner()
+                            print("*** Achievement Unlocked: A 50/50 chance.")
+                            print("")
+                            time.sleep(3)
                             return bet
                         else:
                             loser()
@@ -92,8 +98,8 @@ def cho_han(guess,bet):
     print("-------------------------------------")
     print("")
 
-    print("Rules: You choose Odd or Even then two dice are rolled and the \
-    value is summed. ")
+    print("Rules: You choose Odd or Even then two dice are rolled")
+    print("and the value is summed. ")
     print("")
 
     print("Current Balance:                        $" + str(balance))
@@ -112,27 +118,46 @@ def cho_han(guess,bet):
             time.sleep(2)
             return 0
         else:
-            #Six sides to a die, so generate random number 1-6
-            die_roll_1 = random.randint(1,6)
-            die_roll_2 = random.randint(1,6)
-            #Sum the two die rolls
-            dice_roll = (die_roll_1 + die_roll_2)
+            while True:
+                try:
+                    guess = str(input("Choose Even or Odd:                     "))
+                except ValueError:
+                    error()
+                    continue
+                else:
+                    if guess == "Even" or guess == "even" or guess == "EVEN"\
+                    or guess == "Odd" or guess == "odd" or guess == "ODD":
+                        #Six sides to a die, so generate random number 1-6
+                        die_roll_1 = random.randint(1,6)
+                        die_roll_2 = random.randint(1,6)
+                        #Sum the two die rolls
+                        dice_roll = (die_roll_1 + die_roll_2)
+                        print("First die roll:                         " + \
+                        str(die_roll_1))
+                        time.sleep(2)
+                        print("Second die roll:                        " + \
+                         str(die_roll_2))
+                        time.sleep(2)
 
-            guess = str(input("Choose Even or Odd:                     "))
-            print("First die roll:                         " + str(die_roll_1))
-            time.sleep(2)
-            print("Second die roll:                        " + str(die_roll_2))
-            time.sleep(2)
-
-            if dice_roll % 2 == 0 and guess == "Even":
-                winner()
-                return bet
-            elif dice_roll % 2 == 1 and guess == "Odd":
-                winner()
-                return bet
-            else:
-                loser()
-                return -bet
+                        if (guess == "Even" and dice_roll % 2 == 0) or (guess \
+                        == "EVEN" and dice_roll % 2 == 0) or (guess == "even" \
+                        and dice_roll % 2 == 0):
+                            winner()
+                            print("*** Achievement Unlocked: Call me even Stephens.")
+                            print("")
+                            time.sleep(3)
+                            return bet
+                        elif (guess == "Odd" and dice_roll % 2 == 1) or (guess \
+                        == "odd" and dice_roll % 2 == 1) or (guess == "ODD" and
+                        dice_roll % 2 == 1):
+                            winner()
+                            return bet
+                        else:
+                            loser()
+                            return -bet
+                    else:
+                        error()
+                break
 
 def two_card_draw(guess, bet):
     print("_____________________________________")
@@ -140,7 +165,7 @@ def two_card_draw(guess, bet):
     print("-------------------------------------")
     print("")
 
-    print("Rules: Two cards are chosen, the higher one wins ")
+    print("Rules: Two cards are chosen, the higher one wins.")
     print("")
 
     print("Current Balance:                        $" + str(balance))
@@ -169,6 +194,9 @@ def two_card_draw(guess, bet):
             #Compare cards, higher one wins
             if your_card > my_card:
                 winner()
+                print("*** Achievement Unlocked: One card to rule them all.")
+                print("")
+                time.sleep(3)
                 return bet
             elif my_card > your_card:
                 loser()
@@ -187,9 +215,10 @@ def roulette(guess, bet):
     print("-------------------------------------")
     print("")
 
-    print("Rules: You guess a number between 0 and 36. If the ball \
-    lands on 0 or 00 of if you chose the wrong number, you lose. 37 is equal \
-    to 00. If you guess correctly, there is a multiplier of 35")
+    print("Rules: You guess a number between 0 and 36. If the")
+    print("ball lands on 0 or 00 of if you chose the wrong")
+    print("number, you lose. 00 is equal to 37. If you guess")
+    print("correctly, there is a bet multiplier of 35.")
     print("")
 
     #Standard wheel has 36 slots, plus 00, which in this case is 37.
@@ -231,8 +260,12 @@ def roulette(guess, bet):
                         print("The ball landed on:                     " \
                         + str(landed_ball))
                         if guess == landed_ball:
-                            bet = (bet * 35)
                             winner()
+                            #Adjust bet for multiplier
+                            bet = (bet * 35)
+                            print("*** Achievement Unlocked: Spinner Winner!!!")
+                            print("")
+                            time.sleep(3)
                             return bet
                         else:
                             loser()
@@ -262,6 +295,9 @@ def loser():
     print("Result:                                 Loser :(")
     print("")
     time.sleep(2)
+
+def achievement(counter):
+    print("")
 
 #This 'if' structure will exit if the user runs out of money. If the balance
 #stays positive, it will complete fully.
