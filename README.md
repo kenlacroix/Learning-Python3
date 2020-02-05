@@ -16,3 +16,9 @@ odd or even.
 - **Roulette:** User guesses a number between 0 and 36, if they win, there is bet
 multiplier of 35. Standard roulette has both 0 and 00. 00 is 37 since you can't
 use 00.
+
+###### To-Do:
+
+- [ ] More logic for input validation.
+  - [ ] Move input validation logic to its own function, if possible.
+- [ ] Logic for achievement incrementing.
