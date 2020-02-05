@@ -1,6 +1,6 @@
 ## Learning Python3 - Personal Projects
 ### By: Ken LaCroix
-###### ([Personal Website](https://www.kennethlacroix.me))
+###### [My personal website](https://www.kennethlacroix.me)
 
 #### Games of Chance (CodeAcademy Project)
 
@@ -21,4 +21,6 @@ use 00.
 
 - [ ] More logic for input validation.
   - [ ] Move input validation logic to its own function, if possible.
+  - [ ] Use lists, if possible, for acceptable words as input.
 - [ ] Logic for achievement incrementing.
+- [ ] Implement 'odd' or 'even' for roulette.
