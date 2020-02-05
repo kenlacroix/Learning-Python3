@@ -1,5 +1,6 @@
 ## Learning Python3 - Personal Projects
-### By: Ken LaCroix ##### ([Personal Website](https://www.kennethlacroix.me))
+### By: Ken LaCroix
+###### ([Personal Website](https://www.kennethlacroix.me))
 
 #### Games of Chance (CodeAcademy Project)
 
