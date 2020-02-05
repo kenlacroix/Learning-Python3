@@ -17,6 +17,11 @@ odd or even.
 multiplier of 35. Standard roulette has both 0 and 00. 00 is 37 since you can't
 use 00.
 
+###### Features Beyond Project Scope
+
+- **Achievement tracking:** Similar to how it works in Xbox/PS4. Each 'medal'
+is assigned a message and a rarity level (common, rare, very rare).
+
 ###### To-Do:
 
 - [ ] More logic for input validation.
@@ -24,3 +29,4 @@ use 00.
   - [ ] Use lists, if possible, for acceptable words as input.
 - [ ] Logic for achievement incrementing.
 - [ ] Implement 'odd' or 'even' for roulette.
+- [ ] Look into how a 'leader board' might work.
