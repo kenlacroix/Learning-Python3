@@ -3,6 +3,7 @@
 # CodeAcademy "Games of Chance" Project
 # https://www.kennethlacroix.me
 
+#random is needed for RNG. time is needed to pause program execution.
 import random, time
 
 #Declare guess and bet now so we can use 'if' logic later on them
@@ -17,38 +18,41 @@ print("          *Two Card Draw")
 print("             *Roulette")
 print("")
 print("           By: Ken LaCroix")
-print("        https://www.kennethlacroix.me")
+print("    https://www.kennethlacroix.me")
 print("-------------------------------------")
 print("")
 
 while True:
     try:
         balance = int(input("How much are you starting with?         $"))
-        #Declare again so we can determine profit/loss
+        #Declare now so we can determine profit/loss later.
         init_balance = int(balance)
     except ValueError:
         print("Sorry, I didn't understand that.")
-        #better try again... Return to the start of the loop
         continue
     else:
         if balance <= 10:
             print("")
             print("*** Achievement Unlocked: From small beginings....")
+            print("Difficulty: Common")
             print("")
             time.sleep(3)
         if balance >= 100 and balance <= 400:
             print("")
             print("*** Achievement Unlocked: Big Spenda")
+            print("Difficulty: Common")
             print("")
             time.sleep(3)
         if balance >= 500 and balance < 1000:
             print("")
-            print("*** Achievement Unlocked: Your know the money is fake, right?")
+            print("*** Achievement Unlocked: Your know the money is fake....right?")
+            print("Difficulty: Common")
             print("")
             time.sleep(3)
         if balance >= 1000:
             print("")
-            print("*** Achievement Unlocked: Make'n it RRRAAAIINNN!!!!!!")
+            print("*** Achievement Unlocked: Make'n it RRRAAAIIINNN!!!!!!")
+            print("Difficulty: Common")
             print("")
             time.sleep(3)
         if balance <= 0:
@@ -82,6 +86,7 @@ def coin_flip(guess, bet):
             print("")
             time.sleep(2)
             print("*** Achievement Unlocked: Doesn't play well with others.")
+            print("Difficulty: Rare")
             print("")
             time.sleep(3)
             return 0
@@ -110,6 +115,7 @@ def coin_flip(guess, bet):
                         guess == "tails") or (flip == 2 and guess == "TAILS"):
                             winner()
                             print("*** Achievement Unlocked: A 50/50 chance.")
+                            print("Difficulty: Common")
                             print("")
                             time.sleep(3)
                             return bet
@@ -174,7 +180,8 @@ def cho_han(guess,bet):
                         == "EVEN" and dice_roll % 2 == 0) or (guess == "even" \
                         and dice_roll % 2 == 0):
                             winner()
-                            print("*** Achievement Unlocked: Call me even Stephens.")
+                            print("*** Achievement Unlocked: Even Stephens.")
+                            print("Difficulty: Common")
                             print("")
                             time.sleep(3)
                             return bet
@@ -226,6 +233,7 @@ def two_card_draw(guess, bet):
             if your_card > my_card:
                 winner()
                 print("*** Achievement Unlocked: One card to rule them all.")
+                print("Difficulty: Common")
                 print("")
                 time.sleep(3)
                 return bet
@@ -296,6 +304,7 @@ def roulette(guess, bet):
                             #Adjust bet for multiplier, since the user won.
                             bet = (bet * 35)
                             print("*** Achievement Unlocked: Spinner Winner!!!")
+                            print("Difficulty: Very Rare")
                             print("")
                             time.sleep(3)
                             return bet
@@ -346,10 +355,17 @@ if balance > 0:
             if balance > 0:
                 balance += roulette(guess,bet)
 
-print("You started out with:                   $" + str(init_balance))
-print("Your current balance is:                $" + str(balance))
-print("")
 if init_balance == balance:
     print("*** Achievement Unlocked: Atleast I broke even.")
     print("")
     time.sleep(3)
+if balance > init_balance:
+    print("*** Achievement Unlocked: Better put my winnings into a college-")
+    print("savings plan")
+    print("")
+    time.sleep(3)
+
+print("You started out with:                   $" + str(init_balance))
+print("Your current balance is:                $" + str(balance))
+print("You unlocked:                           x " + "achievements!")
+print("")
