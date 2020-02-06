@@ -186,16 +186,20 @@ print(cities)
 #Unsorted List
 games = ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
 
-#Sorts and creates a new list based on 'games'. Returns: ['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
+#Sorts and creates a new list based on 'games'. Returns: ['Minecraft',
+#'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
 games_sorted = sorted(games)
 print(games_sorted)
-#The original list, prints: ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+#The original list, prints: ['Portal', 'Minecraft', 'Pacman', 'Tetris',
+#'The Sims', 'Pokemon']
 print(games)
 
 ## Lists Review ##
 
 #A list
-inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', \
+'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed',\
+ 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
 
 #Get the length of the list 'inventory.' Returns: 19.
 inventory_len = len(inventory)
@@ -209,18 +213,24 @@ print(first)
 last = inventory[-1]
 print(last)
 
-#Get indexes 2 through 6 (but not including 6). Returns: ['headboard', 'queen bed', 'king bed', 'dresser']
+#Get indexes 2 through 6 (but not including 6). Returns: ['headboard',
+#'queen bed', 'king bed', 'dresser']
 inventory_2_6 = inventory[2:6]
 print (inventory_2_6)
 
-#Get the first three indexes and save it to the variable 'first_3'. Returns: ['twin bed', 'twin bed', 'headboard'].
+#Get the first three indexes and save it to the variable 'first_3'. Returns:
+#['twin bed', 'twin bed', 'headboard'].
 first_3 = inventory[:3]
 print(first_3)
 
-#Get the number of 'twin bed' and save it to the variable 'twin_beds'. Returns 4.
+#Get the number of 'twin bed' and save it to the variable 'twin_beds'.
+#Returns 4.
 twin_beds = inventory.count('twin bed')
 print(twin_beds)
 
-#Sort the list 'inventory' alphabetically. Returns: ['dresser', 'dresser', 'headboard', 'king bed', 'king bed', 'king bed', 'nightstand', 'nightstand', 'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table', 'twin bed', 'twin bed', 'twin bed', 'twin bed']
+#Sort the list 'inventory' alphabetically. Returns: ['dresser', 'dresser',
+#'headboard', 'king bed', 'king bed', 'king bed', 'nightstand', 'nightstand',
+#'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table',
+#'twin bed', 'twin bed', 'twin bed', 'twin bed']
 inventory.sort()
 print(inventory)
