@@ -1,4 +1,5 @@
 ## Creating and Appending Lists ##
+
 #Create a new list 'last_semester_gradebook' and populate it.
 last_semester_gradebook = [("politics", 80), ("latin", 96), ("dance", 97), \
 ("architecture", 65)]
@@ -192,3 +193,34 @@ print(games_sorted)
 print(games)
 
 ## Lists Review ##
+
+#A list
+inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+
+#Get the length of the list 'inventory.' Returns: 19.
+inventory_len = len(inventory)
+print(inventory_len)
+
+#Get the first index value of the list 'inventory'. Return: 'twin bed'.
+first = inventory[1]
+print(first)
+
+#Get the last index value of the list 'inventory'. Returns: 'pillow'.
+last = inventory[-1]
+print(last)
+
+#Get indexes 2 through 6 (but not including 6). Returns: ['headboard', 'queen bed', 'king bed', 'dresser']
+inventory_2_6 = inventory[2:6]
+print (inventory_2_6)
+
+#Get the first three indexes and save it to the variable 'first_3'. Returns: ['twin bed', 'twin bed', 'headboard'].
+first_3 = inventory[:3]
+print(first_3)
+
+#Get the number of 'twin bed' and save it to the variable 'twin_beds'. Returns 4.
+twin_beds = inventory.count('twin bed')
+print(twin_beds)
+
+#Sort the list 'inventory' alphabetically. Returns: ['dresser', 'dresser', 'headboard', 'king bed', 'king bed', 'king bed', 'nightstand', 'nightstand', 'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table', 'twin bed', 'twin bed', 'twin bed', 'twin bed']
+inventory.sort()
+print(inventory)
