@@ -22,7 +22,8 @@ def double_index(lst, index):
     print('')
     return lst
   else:
-    #Multiply the value of the supplied index by two and return the modified list 'lst'.
+    #Multiply the value of the supplied index by two and return the modified
+    #list 'lst'.
     print("The index of " + str(index) + " has a value of: " + str(lst[index]))
     lst[index] = (lst[index] * 2)
     return lst
