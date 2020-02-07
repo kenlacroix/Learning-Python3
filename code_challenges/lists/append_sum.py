@@ -11,8 +11,9 @@
 #Write your function here
 
 def append_sum(lst):
-
+    #Sum the last two elements.
     sum1 = lst[-1] + lst[-2]
+    #Append the sum to the end of the list 'lst'
     lst.append(sum1)
     print(lst)
 
@@ -23,7 +24,7 @@ def append_sum(lst):
     sum3 = lst[-1] + lst[-2]
     lst.append(sum3)
     print(lst)
-
+    #Return the modified list 'lst'.
     return lst
 
 
