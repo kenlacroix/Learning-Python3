@@ -9,18 +9,19 @@
 #Write your function here
 
 def larger_list(lst1, lst2):
-  lst1_len = len(lst1)
-  lst2_len = len(lst2)
+    #Get the length of the two list 'lst'
+    lst1_len = len(lst1)
+    lst2_len = len(lst2)
 
-  if lst1_len > lst2_len:
-    lst1 = lst1[-1]
-    return lst1
-  elif lst2_len > lst1_len:
-    lst2 = lst2[-1]
-    return lst2
-  else:
-    lst1 = lst1[-1]
-    return lst1
+    if lst1_len > lst2_len:
+        lst1 = lst1[-1]
+        return lst1
+    elif lst2_len > lst1_len:
+        lst2 = lst2[-1]
+        return lst2
+    else:
+        lst1 = lst1[-1]
+        return lst1
 
 
 

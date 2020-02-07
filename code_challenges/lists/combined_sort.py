@@ -10,10 +10,12 @@
 #Write your function here
 
 def combine_sort(lst1, lst2):
-  combined = lst1 + lst2
-  combined.sort()
-
-  return combined
+    #Combine the two lists together.
+    combined = lst1 + lst2
+    #Sort the lists.
+    combined.sort() 
+    #Return the modified list.
+    return combined
 
 #Uncomment the line below when your function is done
 print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
