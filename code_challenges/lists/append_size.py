@@ -12,9 +12,12 @@
 #Write your function here
 
 def append_size(lst):
-  lst_len = len(lst)
-  lst.append(lst_len)
-  return lst
+    #Get the length of the list 'lst'.
+    lst_len = len(lst)
+    #Append the size of the list 'lst' to the list providers in the parameter.
+    lst.append(lst_len)
+    #Return the modified list 'lst'.
+    return lst
 
 #Uncomment the line below when your function is done
 print(append_size([23, 42, 108]))
