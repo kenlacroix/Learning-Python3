@@ -5,9 +5,9 @@
 
 #### Python3 Topics Learned So Far ####
 
-- **Lists** [link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py)
-- **Loops**
-- **Strings**
+- **Lists** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py))
+- **Loops** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/loops.py))
+- **Strings** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings.py))
 - **Functions**
 - **Control Flow**
 - **Booleans**
