@@ -9,7 +9,7 @@
 - **Loops**
 - **Strings**
 - **Functions**
-- **Control Flow (loops: if, while, etc.)
+- **Control Flow**
 - **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
