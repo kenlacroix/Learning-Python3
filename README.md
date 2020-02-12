@@ -5,12 +5,12 @@
 
 #### Python3 Topics Learned So Far ####
 
--**Lists**
--**Loops**
--**Strings**
--**Functions**
--**Control Flow (loops: if, while, etc.)
--**Booleans**
+- **Lists**
+- **Loops**
+- **Strings**
+- **Functions**
+- **Control Flow (loops: if, while, etc.)
+- **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
 
