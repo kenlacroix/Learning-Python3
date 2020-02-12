@@ -1,5 +1,4 @@
-## Learning Python3 - Personal Projects
-### By: Ken LaCroix
+## Learning Python3
 ###### [My personal website](https://www.kennethlacroix.me)
 
 
