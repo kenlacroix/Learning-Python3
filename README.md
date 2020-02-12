@@ -2,6 +2,16 @@
 ### By: Ken LaCroix
 ###### [My personal website](https://www.kennethlacroix.me)
 
+
+#### Python3 Topics Learned So Far ####
+
+-**Lists**
+-**Loops**
+-**Strings**
+-**Functions**
+-**Control Flow (loops: if, while, etc.)
+-**Booleans**
+
 #### Games of Chance (CodeAcademy Project)
 
 ###### Description
