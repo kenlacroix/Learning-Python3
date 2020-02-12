@@ -5,7 +5,7 @@
 
 #### Python3 Topics Learned So Far ####
 
-- **Lists**
+- **Lists** [link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py)
 - **Loops**
 - **Strings**
 - **Functions**
