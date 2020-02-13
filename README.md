@@ -10,12 +10,12 @@
 - **Loops** ([link](loops.py))
 - **Strings** ([link](strings.py))
   - String Methods ([link](string_methods.py))
-  - ([Project: Thread Shed](projects/thread_shed.py))
+  - ([Project: Thread Shed](projects/thread-shed.py))
 - **Functions**
   - ([Project: Physics Class](projects/physics_class.py))
 - **Control Flow** ([link](control-flow/))
   - ([Project: College Admissions](projects/control_flow.py))
-  - ([Project: Games of Chance](projects/games_of_chance.py))
+  - ([Project: Games of Chance](projects/games-of-chance.py))
 - **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
