@@ -7,7 +7,7 @@
 - **Lists** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py))
 - **Loops** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/loops.py))
 - **Strings** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings.py))
-  - **String Methods** ([link][https://github.com/kenlacroix/Learning-Python3/blob/master/strings_methods.py])
+  - **String Methods** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings_methods.py))
 - **Functions**
 - **Control Flow**
 - **Booleans**
