@@ -6,11 +6,15 @@
 
 - **Lists** ([link](lists.py))
   - Carlys Clippers ([project](projects/carlys_clippers.py))
+  - Len's Slice ([project](projects/lens_slice.py))
 - **Loops** ([link](loops.py))
 - **Strings** ([link](strings.py))
   - String Methods ([link](string_methods.py))
 - **Functions**
+  - Physics Class ([project](projects/physics_class.py))
 - **Control Flow** ([link](control-flow/))
+  - College Admissions ([project](projects/control_flow.py))
+  - Games of Chance ([project](projects/games_of_chance.py))
 - **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
