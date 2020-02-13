@@ -4,13 +4,13 @@
 
 #### Python3 Topics Learned So Far ####
 
-- **Lists** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py))
-  - Carlys Clippers ([Project](https://github.com/kenlacroix/Learning-Python3/blob/master/projects/carlys_clippers.py))
-- **Loops** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/loops.py))
-- **Strings** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings.py))
-  - String Methods ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/string_methods.py))
+- **Lists** ([link](lists.py))
+  - Carlys Clippers ([project](projects/carlys_clippers.py))
+- **Loops** ([link](loops.py))
+- **Strings** ([link](strings.py))
+  - String Methods ([link](string_methods.py))
 - **Functions**
-- **Control Flow** ([link](https://github.com/kenlacroix/Learning-Python3/tree/master/control-flow))
+- **Control Flow** ([link](control-flow/))
 - **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
