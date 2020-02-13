@@ -5,7 +5,7 @@
 #### Python3 Topics Learned So Far ####
 
 - **Lists** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py))
-  - ([Carly's Clippers Project](https://github.com/kenlacroix/Learning-Python3/blob/master/projects/carlys_clippers.py))
+  - [Carly's Clippers Project](https://github.com/kenlacroix/Learning-Python3/blob/master/projects/carlys_clippers.py)
 - **Loops** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/loops.py))
 - **Strings** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings.py))
   - String Methods ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/string_methods.py))
