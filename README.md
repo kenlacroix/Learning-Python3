@@ -7,9 +7,9 @@
 - **Lists** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/lists.py))
 - **Loops** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/loops.py))
 - **Strings** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/strings.py))
-  - **String Methods** ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/string_methods.py))
+  - String Methods ([link](https://github.com/kenlacroix/Learning-Python3/blob/master/string_methods.py))
 - **Functions**
-- **Control Flow**
+- **Control Flow** ([link](https://github.com/kenlacroix/Learning-Python3/tree/master/control-flow))
 - **Booleans**
 
 #### Games of Chance (CodeAcademy Project)
