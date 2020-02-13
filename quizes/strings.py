@@ -51,5 +51,3 @@ least_favorite_fruit[5:8]
 'o' # correct, gets the length, moves to the second to last index.
 'This code will throw an IndexError' # incorrect
 'i' # incorrect
-
-## String Methods ##
