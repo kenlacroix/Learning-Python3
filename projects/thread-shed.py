@@ -143,3 +143,4 @@ daily_transactions_split = []
 #daily_transactions_split.
 
 for i in daily_transactions:
+    daily_transactions_split.append(split('x'))

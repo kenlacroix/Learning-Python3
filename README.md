@@ -5,11 +5,12 @@
 #### Python3 Topics Learned So Far ####
 
 - **Lists** ([link](lists.py))
-  - Carlys Clippers ([project](projects/carlys_clippers.py))
-  - Len's Slice ([project](projects/lens_slice.py))
+  - ([Project: Carlys Clippers](projects/carlys_clippers.py))
+  - ([Project: Len's Slice](projects/lens_slice.py))
 - **Loops** ([link](loops.py))
 - **Strings** ([link](strings.py))
   - String Methods ([link](string_methods.py))
+  - ([Project: Thread Shed](projects/thread_shed.py))
 - **Functions**
   - Physics Class ([project](projects/physics_class.py))
 - **Control Flow** ([link](control-flow/))
