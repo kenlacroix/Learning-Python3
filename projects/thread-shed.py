@@ -15,8 +15,7 @@ Carroll Boyd;,; $14.51;,;   purple&blue   ;,;
 09/15/17   , Teresa Carter   ;,; $19.64 ;,;
 white;,;09/15/17   ,   Jacob Kennedy ;,; $11.40
 ;,; white&red   ;,; 09/15/17, Craig Chambers;,;
-$8.79 ;,; white&blue&red   ;,;09/15/17   , Peggy Bell;,; $8.65 ;,;blue
-;,; 09/15/17,   Kenneth Cunningham ;,;   $10.53;,;   green&blue   ;,;
+$8.79 ;,; white&blue&red   ;,;09/15/17   , Peggy Bell;,; $8.65 ;,;blue   ;,; 09/15/17,   Kenneth Cunningham ;,;   $10.53;,;   green&blue   ;,;
 09/15/17   ,   Marvin Morgan;,;   $16.49;,;
 green&blue&red   ;,;   09/15/17 ,Marjorie Russell
 ;,; $6.55 ;,;   green&blue&red;,;   09/15/17 ,
@@ -28,20 +27,17 @@ Rhonda Farmer;,;$2.91 ;,;   white&black&yellow
 ;,;09/15/17, Darren Mckenzie ;,;$22.94;,;green
 ;,;09/15/17,Rufus Malone;,;$4.70   ;,; green&yellow
 ;,; 09/15/17   ,Hubert Miles;,;   $3.59
-;,;green&yellow&blue;,;   09/15/17   , Joseph Bridges  ;,;$5.66   ;,;
-green&yellow&purple&blue
+;,;green&yellow&blue;,;   09/15/17   , Joseph Bridges  ;,;$5.66   ;,; green&yellow&purple&blue
 ;,;   09/15/17 , Sergio Murphy   ;,;$17.51   ;,;
 black   ;,;   09/15/17 , Audrey Ferguson ;,;
 $5.54;,;black&blue   ;,;09/15/17 ,Edna Williams ;,;
-$17.13;,; black&blue;,;   09/15/17,   Randy Fleming;,;   $21.13 ;,;black ;,;
-09/15/17 ,Elisa Hart;,; $0.35   ;,; black&purple;,;   09/15/17   ,
+$17.13;,; black&blue;,;   09/15/17,   Randy Fleming;,;   $21.13 ;,;black ;,;09/15/17 ,Elisa Hart;,; $0.35   ;,; black&purple;,;   09/15/17   ,
 Ernesto Hunt ;,; $13.91   ;,;   black&purple ;,;
 09/15/17,   Shannon Chavez   ;,;$19.26   ;,;
 yellow;,; 09/15/17   , Sammy Cain;,; $5.45;,;
 yellow&red ;,;09/15/17 ,   Steven Reeves ;,;$5.50
 ;,;   yellow;,;   09/15/17, Ruben Jones   ;,;
-$14.56 ;,;   yellow&blue;,;09/15/17 , Essie Hansen;,;   $7.33   ;,;
-yellow&blue&red
+$14.56 ;,;   yellow&blue;,;09/15/17 , Essie Hansen;,;   $7.33   ;,;   yellow&blue&red
 ;,; 09/15/17   ,   Rene Hardy   ;,; $20.22   ;,;
 black ;,;   09/15/17 ,   Lucy Snyder   ;,; $8.67
 ;,;black&red  ;,; 09/15/17 ,Dallas Obrien ;,;
@@ -55,8 +51,7 @@ Ryan Webster;,;$2.94 ;,; yellow ;,; 09/15/17
 ,Justin Blake ;,; $22.46   ;,;white&yellow ;,;
 09/15/17,   Beverly Baldwin ;,;   $6.60;,;
 white&yellow&black ;,;09/15/17   ,   Dale Brady
-;,;   $6.27 ;,; yellow   ;,;09/15/17 ,Guadalupe Potter ;,;$21.12
-;,; yellow;,; 09/15/17   ,
+;,;   $6.27 ;,; yellow   ;,;09/15/17 ,Guadalupe Potter ;,;$21.12   ;,; yellow;,; 09/15/17   ,
 Desiree Butler ;,;$2.10   ;,;white;,; 09/15/17
 ,Sonja Barnett ;,; $14.22 ;,;white&black;,;
 09/15/17, Angelica Garza;,;$11.60;,;white&black
@@ -67,27 +62,22 @@ white&black&red ;,;09/15/17   ,   Rex Hudson
 Hannah Pratt;,;   $22.61   ;,;   purple&yellow
 ;,;09/15/17,Gayle Richards;,;$22.19 ;,;
 green&purple&yellow ;,;09/15/17   ,Stanley Holland
-;,; $7.47   ;,; red ;,; 09/15/17 , Anna Dean;,;$5.49 ;,; yellow&red ;,;
-09/15/17   ,
+;,; $7.47   ;,; red ;,; 09/15/17 , Anna Dean;,;$5.49 ;,; yellow&red ;,;   09/15/17   ,
 Terrance Saunders ;,;   $23.70  ;,;green&yellow&red
 ;,; 09/15/17 ,   Brandi Zimmerman ;,; $26.66 ;,;
 red   ;,;09/15/17 ,Guadalupe Freeman ;,; $25.95;,;
 green&red ;,;   09/15/17   ,Irving Patterson
-;,;$19.55 ;,; green&white&red ;,;   09/15/17 ,Karl Ross;,;   $15.68;,;
-white ;,;   09/15/17 , Brandy Cortez ;,;$23.57;,;   white&red   ;,;09/15/17,
-Mamie Riley   ;,;$29.32;,; purple;,;09/15/17 ,Mike Thornton   ;,; $26.44 ;,;
-purple   ;,; 09/15/17,
+;,;$19.55 ;,; green&white&red ;,;   09/15/17 ,Karl Ross;,;   $15.68;,;   white ;,;   09/15/17 , Brandy Cortez ;,;$23.57;,;   white&red   ;,;09/15/17,
+Mamie Riley   ;,;$29.32;,; purple;,;09/15/17 ,Mike Thornton   ;,; $26.44 ;,;   purple   ;,; 09/15/17,
 Jamie Vaughn   ;,; $17.24;,;green ;,; 09/15/17   ,
 Noah Day ;,;   $8.49   ;,;green   ;,;09/15/17
-,Josephine Keller ;,;$13.10 ;,;green;,;   09/15/17 ,   Tracey Wolfe;,;$20.39 ;,;
-red   ;,; 09/15/17 ,
+,Josephine Keller ;,;$13.10 ;,;green;,;   09/15/17 ,   Tracey Wolfe;,;$20.39 ;,; red   ;,; 09/15/17 ,
 Ignacio Parks;,;$14.70   ;,; white&red ;,;09/15/17
 , Beatrice Newman ;,;$22.45   ;,;white&purple&red
 ;,;   09/15/17, Andre Norris   ;,;   $28.46   ;,;
 red;,;   09/15/17 ,   Albert Lewis ;,; $23.89;,;
 black&red;,; 09/15/17,   Javier Bailey   ;,;
-$24.49   ;,; black&red ;,; 09/15/17   , Everett Lyons ;,;$1.81;,;
-black&red ;,; 09/15/17 ,
+$24.49   ;,; black&red ;,; 09/15/17   , Everett Lyons ;,;$1.81;,;   black&red ;,; 09/15/17 ,
 Abraham Maxwell;,; $6.81   ;,;green;,;   09/15/17
 ,   Traci Craig ;,;$0.65;,; green&yellow;,;
 09/15/17 , Jeffrey Jenkins   ;,;$26.45;,;
@@ -100,8 +90,8 @@ Leonard Guerrero ;,;   $1.86   ;,;yellow
 yellow&blue;,;   09/15/17   , Terrell Barber   ;,;
 $9.91   ;,; green ;,;09/15/17   ,Jody Flores;,;
 $16.34 ;,; green ;,;   09/15/17,   Daryl Herrera
-;,;$27.57;,; white;,;   09/15/17   , Miguel Mcguire;,;$5.25;,; white&blue
-;,;   09/15/17 ,   Rogelio Gonzalez;,; $9.51;,;   white&black&blue
+;,;$27.57;,; white;,;   09/15/17   , Miguel Mcguire;,;$5.25;,; white&blue   ;,;   09/15/17 ,
+Rogelio Gonzalez;,; $9.51;,;   white&black&blue
 ;,;   09/15/17   ,   Lora Hammond ;,;$20.56 ;,;
 green;,;   09/15/17,Owen Ward;,; $21.64   ;,;
 green&yellow;,;09/15/17,Malcolm Morales ;,;
@@ -115,32 +105,54 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,; green&white&blue   ;,; 09/15/17 , Myrtle Morris
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
-#Replace all the instances of ;,; in daily_sales with some other character and
-#save the result to daily_sales_replaced. By keeping ;,; -- you might split the
-#transactions because of the comma.
-
-daily_sales_replaced = daily_sales.replace(';,;', 'x')
-#print(daily_sales_replaced)
-
-#Split daily_sales_replaced around commas and save it to a new list
-#daily_transactions.
-
-daily_transactions = daily_sales_replaced.split(',')
+#------------------------------------------------
+# Start coding below!
+daily_sales_replaced = daily_sales.replace(";,;", "+")
+daily_transactions = daily_sales_replaced.split(",")
 #print(daily_transactions)
-
-#Our next step is to split each individual transaction into a list of its
-#data points.
-#
-#First, define an empty list daily_transactions_split
-
 daily_transactions_split = []
+for transaction in daily_transactions:
+  daily_transactions_split.append(transaction.split("+"))
+#print(daily_transactions_split)
 
-#Now, iterate through daily_transactions (remember, this is a list of strings
-#currently), and for each transaction, split the string around whatever
-#character you replaced the ;,; artifacts with in Step 2.
-#
-#Append each of these split strings (which are lists now) to our new list
-#daily_transactions_split.
+transactions_clean = []
+for transac in daily_transactions_split:
+  transaction_clean = []
+  for tran in transac:
+    transaction_clean.append(tran.replace("\n", "").strip(" "))
+  transactions_clean.append(transaction_clean)
+#print(transactions_clean)
 
-for i in daily_transactions:
-    daily_transactions_split.append(split('x'))
+customers = []
+sales = []
+thread_sold = []
+for tran_clean in transactions_clean:
+  customers.append(tran_clean[0])
+  sales.append(tran_clean[1])
+  thread_sold.append(tran_clean[2])
+#print(customers, sales, thread_sold)
+
+total_sales = 0
+for sale in sales:
+  sale = float(sale.strip("$"))
+  total_sales += sale
+#print(total_sales)
+#print(thread_sold)
+thread_sold_split = []
+for item in thread_sold:
+  #print(item)
+  for color in item.split("&"):
+    thread_sold_split.append(color)
+#print(thread_sold_split)
+
+def color_count(color):
+  count = 0
+  for items in thread_sold_split:
+    if color == items:
+      count += 1
+  return(count)
+
+print(color_count("white"))
+colors =  ['red','yellow','green','white','black','blue','purple']
+for color in colors:
+  print("{a} threads of {b} were sold today".format(a = color_count(color), b = color))
